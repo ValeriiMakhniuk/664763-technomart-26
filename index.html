@@ -11,10 +11,14 @@
       <div class="container">
         <div class="main-header__top-section">
           <a href="/" class="logo">Техномарт</a>
-          <input type="search" class="main-header__search-field" />
-          <a href="#" class="main-header__bookmarks">Закладки</a>
-          <a href="#" class="main-header__basket">Корзина</a>
-          <a href="#" class="main-header__order-btn">Оформить заказ</a>
+          <form action="#" role="search">
+            <input type="search" class="main-header__search-field" aria-label="Поиск по сайту"/>
+          </form>
+          <div class="main-header__tabs" role="tablist" aria-label="Вкладки">
+            <a href="#" class="main-header__bookmarks" role="tab" aria-selected="false">Закладки: 0</a>
+            <a href="#" class="main-header__basket" role="tab" aria-selected="false">Корзина: 0</a>
+          </div>
+          <a href="#" class="main-header__order-btn" role="button">Оформить заказ</a>
         </div>
         <!-- /.main-header__top-section -->
         <div class="main-header__bot-section">
@@ -25,20 +29,20 @@
               и инструментов для ремонта <br />
             </h1>
             <div class="main-header__info">
-              <a href="tel:+7-812-555-05-55" class="mobile">+7 (812) 555-05-55</a>
+              <a href="tel:+7-812-555-05-55" class="mobile" aria-label="Номер телефона магазина Техномаркет">+7 (812) 555-05-55</a>
               <p class="address">
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               </p>
             </div>
             <!-- /.main-header__info -->
-            <a href="#" class="login-btn">Войти</a>
-            <a href="#" class="reg-btn">Регистрация</a>
+            <a href="#" class="login-btn" role="button" aria-label="Личный кабинет">Войти</a>
+            <a href="#" class="reg-btn" role="button" aria-label="Линчный кабинет">Регистрация</a>
           </div>
           <!-- /.row -->
-          <nav class="main-nav">
+          <nav class="main-nav" aria-label="Главная">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Главная</a>
+                <a href="#" class="main-nav__link" aria-current="page">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Компания</a>
@@ -70,55 +74,124 @@
     <!-- /.main-header -->
     <main class="main">
       <section class="menu-grid">
+        <h2 class="menu-grid__title">Меню</h2>
         <div class="container">
-          <h2>Каталог</h2>
-          <ul class="menu-grid__list">
-            <li class="menu-grid__item">
-              <h3 class="menu-grid__item-title">Материалы</h3>
-              <a href="#" class="manu-grid__item-link">на любой вкус</a>
-            </li>
-            <li class="menu-grid__item">
-              <h3 class="menu-grid__item-title">Инструмент</h3>
-              <a href="#" class="manu-grid__item-link">На все случаи</a>
-            </li>
-            <li class="menu-grid__item">
-              <h3 class="menu-grid__item-title">Техника </h3>
-              <a href="#" class="manu-grid__item-link">Для стройки</a>
-            </li>
-            <li class="menu-grid__item menu-grid__slider">
-              <ul class="menu-grid__slider-list">
-                <li class="menu-grid__slider-slide">
-                  <div class="menu-grid__slider-slide-header">
-                    <h3 class="menu-grid__slider-slide-title">Перфораторы</h3>
-                    <span class="menu-grid__slider-slide-desc">Настоящие мужские игрушки</span>
+          <nav class="menu-grid__menu" aria-label="Меню">
+            <ul class="menu-grid__menu-list">
+              <li class="menu-grid__menu-item">
+                <a href="#" class="menu-grid__menu-card">
+                  <h3 class="menu-grid__menu-card-title">Материалы</h3>
+                  <p class="menu-grid__menu-card-desc">на любой вкус</p>
+                  <svg class="menu-grid__menu-card-icon"></svg>
+                </a>
+              </li>
+              <li class="menu-grid__menu-item">
+                <a href="#" class="menu-grid__menu-card">
+                  <h3 class="menu-grid__menu-card-title">Инструмент </h3>
+                  <p class="menu-grid__menu-card-desc">на все случаи</p>
+                  <svg class="menu-grid__menu-card-icon"></svg>
+                </a>
+              </li>
+              <li class="menu-grid__menu-item">
+                <a href="#" class="menu-grid__menu-card">
+                  <h3 class="menu-grid__menu-card-title">Техника </h3>
+                  <p class="menu-grid__menu-card-desc">для стройки</p>
+                  <svg class="menu-grid__menu-card-icon"></svg>
+                </a>
+              </li>
+              <li class="menu-grid__menu-item">
+                <a href="#" class="menu-grid__menu-card">
+                  <h3 class="menu-grid__menu-card-title">Скидки 50% </h3>
+                  <p class="menu-grid__menu-card-desc">на 350 товаров</p>
+                  <svg class="menu-grid__menu-card-icon"></svg>
+                </a>
+              </li>
+              <li class="menu-grid__menu-item">
+                <a href="#" class="menu-grid__menu-card">
+                  <h3 class="menu-grid__menu-card-title">Доставка </h3>
+                  <p class="menu-grid__menu-card-desc">бесплатно</p>
+                  <svg class="menu-grid__menu-card-icon"></svg>
+                </a>
+              </li>
+            </ul>
+            <!-- /.menu-grid__menu-list -->
+            <section
+            class="menu-grid__menu-slider"
+            aria-roledescription="Слайдер"
+            aria-label="Продукция магазина">
+              <div class="menu-grid__menu-slider-inner">
+                <button
+                class="menu-grid__menu-slider-control
+                       menu-grid__menu-slider-control_prev"
+                aria-controls="slider-items"
+                aria-label="Следующий слайд"
+                >
+                  <svg></svg>
+                </button>
+                <button
+                class="menu-grid__menu-slider-control
+                       menu-grid__menu-slider-control_next"
+                aria-controls="slider-items"
+                aria-label="Предидущий слайд"
+                >
+                  <svg></svg>
+                </button>
+                <div
+                class="menu-grid__menu-slider-items"
+                id="slider-items"
+                aria-live="assertive">
+                  <div
+                  class="menu-grid__menu-slider-item active"
+                  role="group"
+                  aria-roledescription="Слайд"
+                  aria-label="1 из 2">
+                    <div class="menu-grid__menu-slider-item-image">
+                      <a href="#">
+                        <img src="https://via.placeholder.com/150x100" alt="Перфораторы">
+                      </a>
+                    </div>
+                    <!-- /.menu-grid__menu-slider-image -->
+                    <div class="menu-grid__menu-slider-item-caption">
+                      <h3 class="menu-grid__menu-slider-item-caption-title">Перфораторы </h3>
+                      <p class="menu-grid__menu-slider-item-desc">Настоящие мужские игрушки</p>
+                    </div>
+                    <a
+                    href="#"
+                    class="menu-grid__menu-slider-item-btn">
+                      открыть каталог
+                    </a>
                   </div>
-                  <!-- /.menu-grid__slider-slide-header -->
-                  <a href="catalog.html" class="menu-grid__slider-slide-catalog-btn">Открыть каталог</a>
-                </li>
-                <!-- /.menu-grid__slider-slide -->
-                <li class="menu-grid__slider-slide">
-                  <div class="menu-grid__slider-slide-header">
-                    <h3 class="menu-grid__slider-slide-title">Дрели</h3>
-                    <span class="menu-grid__slider-slide-desc">Соседям на радость</span>
+                  <!-- /.menu-grid__menu-slider-item -->
+                  <div
+                  class="menu-grid__menu-slider-item"
+                  role="group"
+                  aria-roledescription="Слайд"
+                  aria-label="2 из 2">
+                    <div class="menu-grid__menu-slider-item-image">
+                      <a href="#">
+                        <img src="https://via.placeholder.com/150x100" alt="Дрели">
+                      </a>
+                    </div>
+                    <!-- /.menu-grid__menu-slider-image -->
+                    <div class="menu-grid__menu-slider-item-caption">
+                      <h3 class="menu-grid__menu-slider-item-caption-title">Дрели</h3>
+                      <p class="menu-grid__menu-slider-item-desc">Соседфм на радость</p>
+                    </div>
+                    <a
+                    href="#"
+                    class="menu-grid__menu-slider-item-btn">
+                      открыть каталог
+                    </a>
                   </div>
-                  <!-- /.menu-grid__slider-slide-header -->
-                  <a href="catalog.html" class="menu-grid__slider-slide-catalog-btn">Открыть каталог</a>
-                </li>
-                <!-- /.menu-grid__slider-slide -->
-              </ul>
-              <!-- /.menu-grid__slider-list -->
-            </li>
-            <!-- /.menu-grid__slider -->
-            <li class="menu-grid__item">
-              <h3 class="menu-grid__item-title">Скидки 50% </h3>
-              <a href="#" class="manu-grid__item-link">на 350 товаров</a>
-            </li>
-            <li class="menu-grid__item">
-              <h3 class="menu-grid__item-title">Доставка</h3>
-              <a href="#" class="manu-grid__item-link">Бесплатно</a>
-            </li>
-          </ul>
-          <!-- /.menu-grid__list -->
+                  <!-- /.menu-grid__menu-slider-item -->
+                </div>
+                <!-- /.menu-grid__menu-slider-items -->
+              </div>
+              <!-- /.menu-grid__menu-slider-inner -->
+            </section>
+            <!-- /.menu-grid__menu-slider -->
+          </nav>
+          <!-- /.menu-grid__menu -->
         </div>
         <!-- /.container -->
       </section>
@@ -263,36 +336,92 @@
             </p>
           </header>
           <!-- /.services__header -->
-          <div class="services__pannel">
-            <ul class="services__pannel-list">
-              <li class="services__pannel-item">
-                <button class="services__pannel-btn" type="button">Доставка</button>
+          <div class="services__accordeon">
+            <ul class="service__accordeon-list">
+              <li class="services__accordeon-item">
+                <h3 class="services__accordeon-item-toggle">
+                  <button
+                  class="services__accordeon-item-trigger"
+                  id="deliverybtn"
+                  aria-expanded="true"
+                  aria-controls="delivery"
+                  aria-disabled="true">
+                    <span class="services__accordeon-item-title">Доставка</span>
+                  </button>
+                </h3>
               </li>
-              <li class="services__pannel-item">
-                <button class="services__pannel-btn" type="button">Гарантия</button>
+              <li class="services__accordeon-item">
+                <h3 class="services__accordeon-item-toggle">
+                  <button
+                  class="services__accordeon-item-trigger"
+                  id="garanteebtn"
+                  aria-expanded="false"
+                  aria-controls="garantee">
+                    <span class="services__accordeon-item-title">Гарантия</span>
+                  </button>
+                </h3>
               </li>
-              <li class="services__pannel-item">
-                <button class="services__pannel-btn" type="button">Кредит</button>
+              <li class="services__accordeon-item">
+                <h3 class="services__accordeon-item-toggle">
+                  <button
+                  class="services__accordeon-item-trigger"
+                  id="creditbtn"
+                  aria-expanded="false"
+                  aria-controls="credit">
+                    <span class="services__accordeon-item-title">Кредит</span>
+                  </button>
+                </h3>
               </li>
             </ul>
-            <!-- /.services__pannel-list -->
-            <div class="services__pannel-content">
-              <h3 class="services__pannel-content-title">Доставка</h3>
-              <p class="service__pannel-content-desc">
-                Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
-                поднимая его на ваш этаж!
+            <!-- /.service__accordeon-list -->
+            <div
+            class="services__accordeon-pannel"
+            id="delivery"
+            role="region"
+            aria-labelledby="deliverybtn">
+              <span class="services__accordeon-pannel-title">Доставка</span>
+              <p class="services__accordeon-pannel-desc">
+                  Мы с удовольствием доставим ваш товар прямо <br>
+                  к вашему подъезду совершенно бесплатно! <br>
+                  Ведь мы неплохо заработаем, <br>
+                  поднимая его на ваш этаж! <br>
               </p>
-              <img src="/img/servieces__pannel-delivery.png"
-              alt="картинка доставки"
-              width="468"
-              height="261"
-              class="services__pannel-content-img">
             </div>
-            <!-- /.services__pannel-content -->
+            <!-- /.services__accordeon-pannel -->
+            <div
+            class="services__accordeon-pannel"
+            id="garantee"
+            role="region"
+            aria-labelledby="garanteebtn"
+            hidden>
+              <span class="services__accordeon-pannel-title">Гарантия</span>
+              <p class="services__accordeon-pannel-desc">
+                Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его
+                возгоранием,  вы всегда можете быть уверены в
+                нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </div>
+            <!-- /.services__accordeon-pannel -->
+            <div
+            class="services__accordeon-pannel"
+            id="credit"
+            role="region"
+            aria-labelledby="creditbtn"
+            hidden>
+              <span class="services__accordeon-pannel-title">Кредит</span>
+              <p class="services__accordeon-pannel-desc">
+                  Залезть в долговую яму стало проще!  <br>
+                  Кредитные консультанты придут вам на помощь.
+              </p>
+              <a href="#" class="services__accordeon-pannel-btn">
+                отправить заявку
+              </a>
+            </div>
+            <!-- /.services__accordeon-pannel -->
           </div>
-          <!-- /.services__pannel -->
+          <!-- /.services__accordeon -->
         </div>
         <!-- /.container -->
       </section>
@@ -339,23 +468,25 @@
       <div class="footer__top-section">
         <div class="row">
           <a href="/" class="logo">Техномарт</a>
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Компания</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Новости</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Каталог</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Доставка</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Контакты</a>
-            </li>
-          </ul>
+          <nav class="footer__nav" aria-label="Подвал">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Компания</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Новости</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Каталог</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Доставка</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
           <!-- /.footer__nav-list -->
         </div>
         <!-- /.row -->
@@ -364,23 +495,23 @@
             <p class="footer__address">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </p>
-            <a href="tel:+7-812-555-05-55" class="footer__mobile">
+            <a href="tel:+7-812-555-05-55" class="footer__mobile" aria-label="Номер телефона магазина Техномаркет">
               +7 (812) 555-05-55
             </a>
           </div>
           <!-- /.footer__info -->
           <ul class="footer__catalog-list">
             <li class="footer__catalog-item">
-              <a href="#" class="footer__catalog-link">Материалы</a>
+              <a href="#" class="footer__catalog-link" aria-label="Каталог">Материалы</a>
             </li>
             <li class="footer__catalog-item">
-              <a href="#" class="footer__catalog-link">Техника</a>
+              <a href="#" class="footer__catalog-link" aria-label="Каталог">Техника</a>
             </li>
             <li class="footer__catalog-item">
-              <a href="#" class="footer__catalog-link">Инструмент</a>
+              <a href="#" class="footer__catalog-link" aria-label="Каталог">Инструмент</a>
             </li>
             <li class="footer__catalog-item">
-              <a href="#" class="footer__catalog-link">Спецпредложения</a>
+              <a href="#" class="footer__catalog-link" aria-label="Каталог">Спецпредложения</a>
             </li>
           </ul>
           <!-- /.footer__catalog-list -->
@@ -397,12 +528,14 @@
             <a
               href="#"
               class="footer__socials-link footer__socials-link-vk"
+              aria-label="Техномарт во ВКонтакте"
             ></a>
           </li>
           <li class="footer__socials-item">
             <a
               href="#"
               class="footer__socials-link footer__socials-link-fb"
+              aria-label="Техномарт в Фэйсбуке"
             >
             </a>
           </li>
@@ -410,13 +543,14 @@
             <a
               href="#"
               class="footer__socials-link footer__socials-link-inst"
+              aria-label="Техномарт в инстаграме"
             ></a>
           </li>
         </ul>
         <!-- /.footer__socials-list -->
         <p class="footer__mail">
           Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru" class="footer__mail-link">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru" class="footer__mail-link" aria-label="Почта техномарт">mail@htmlacademy.ru</a>
         </p>
         <p class="footer__author">
           Разработано —
