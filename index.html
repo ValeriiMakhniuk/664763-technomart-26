@@ -203,47 +203,55 @@
           <!-- /.popular-products__header -->
           <ul class="popular-products__list">
             <li class="popular-products__product-card product-card">
-              <img src="/img/products/bosh_bfg_9000.jpg"
-              alt="Перфоратор BOSCH  BFG 9000"
-              width="184"
-              height="164"
-              class="popular-products__product-card-img product-card-img">
-              <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 9000</h3>
-              <span class="popular-products__product-card-last-price product-card-last-price">32500 Р.</span>
-              <button class="popular-products__product-card-price product-card-price" type="button">25500 Р.</button>
+              <a href="#" aria-label="Карточка товара">
+                <img src="/img/products/bosh_bfg_9000.jpg"
+                alt="Перфоратор BOSCH  BFG 9000"
+                width="184"
+                height="164"
+                class="popular-products__product-card-img product-card-img">
+                <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 9000</h3>
+                <span class="popular-products__product-card-last-price product-card-last-price">32500 Р.</span>
+                <button class="popular-products__product-card-price product-card-price" type="button">25500 Р.</button>
+              </a>
             </li>
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card product-card">
-              <img src="/img/products/bosh_bfg_3000.jpg"
-              alt="Перфоратор BOSCH  BFG 3000"
-              width="127"
-              height="112"
-              class="popular-products__product-card-img product-card-img">
-              <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 3000</h3>
-              <span class="popular-products__product-card-last-price product-card-last-price">22500 Р.</span>
-              <button class="popular-products__product-card-price product-card-price" type="button">15500 Р.</button>
+              <a href="#" aria-label="Карточка товара">
+                <img src="/img/products/bosh_bfg_3000.jpg"
+                alt="Перфоратор BOSCH  BFG 3000"
+                width="127"
+                height="112"
+                class="popular-products__product-card-img product-card-img">
+                <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 3000</h3>
+                <span class="popular-products__product-card-last-price product-card-last-price">22500 Р.</span>
+                <button class="popular-products__product-card-price product-card-price" type="button">15500 Р.</button>
+              </a>
             </li>
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card product-card">
-              <img src="/img/products/bosh_bfg_6000.jpg"
-              alt="Перфоратор BOSCH  BFG 6000"
-              width="144"
-              height="128"
-              class="popular-products__product-card-img product-card-img">
-              <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 6000</h3>
-              <span class="popular-products__product-card-last-price product-card-last-price">30500 Р.</span>
-              <button class="popular-products__product-card-price product-card-price" type="button">25500 Р.</button>
+              <a href="#" aria-label="Карточка товара">
+                <img src="/img/products/bosh_bfg_6000.jpg"
+                alt="Перфоратор BOSCH  BFG 6000"
+                width="144"
+                height="128"
+                class="popular-products__product-card-img product-card-img">
+                <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 6000</h3>
+                <span class="popular-products__product-card-last-price product-card-last-price">30500 Р.</span>
+                <button class="popular-products__product-card-price product-card-price" type="button">25500 Р.</button>
+              </a>
             </li>
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card product-card">
-              <img src="/img/products/bosh_bfg_2000.jpg"
-              alt="Перфоратор BOSCH  BFG 2000"
-              width="127"
-              height="112"
-              class="popular-products__product-card-img product-card-img">
-              <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 2000</h3>
-              <span class="popular-products__product-card-last-price product-card-last-price"></span>
-              <button class="popular-products__product-card-price product-card-price" type="button">12500 Р.</button>
+              <a href="#" aria-label="Карточка товара">
+                <img src="/img/products/bosh_bfg_2000.jpg"
+                alt="Перфоратор BOSCH  BFG 2000"
+                width="127"
+                height="112"
+                class="popular-products__product-card-img product-card-img">
+                <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 2000</h3>
+                <span class="popular-products__product-card-last-price product-card-last-price"></span>
+                <button class="popular-products__product-card-price product-card-price" type="button">12500 Р.</button>
+              </a>
             </li>
             <!-- popular-products__product-card -->
           </ul>
@@ -453,7 +461,60 @@
             </p>
             <div class="about__contacts-map"></div>
             <!-- /.about__contacts-map -->
-            <a href="#" class="about__contacts-btn">Заблудились? Напишите нам!</a>
+            <a href="#" class="about__contacts-btn" role="button" id="writeus">Заблудились? Напишите нам!</a>
+            <!-- Dialog contacts start-->
+            <div
+            class="about__contacts-dialog visually-hidden"
+            id="dialogwrite"
+            aria-labelledby="writeus"
+            aria-modal="true"
+            role="dialog"
+            tabindex="-1"
+            hidden>
+              <div
+              class="about__contacts-dialog-content"
+              role="document">
+                <form action="#" class="about__contacts-dialog-form">
+                  <fieldset class="about__contacts-dialog-field">
+                    <ul class="about__contacts-dialog-field-list">
+                      <li>
+                        <label for="name">Ваше имя:</label>
+                        <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Имя Фамилия"
+                        autocomplete="name"
+                        required>
+                      </li>
+                      <li>
+                        <label for="email">Ваш email:</label>
+                        <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        autocapitalize="off"
+                        autocomplete="email"
+                        required
+                        placeholder="email@example.com">
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <label for="mailtext">Текст письма:</label>
+                  <textarea name="text" id="mailtext" placeholder="В свободной форме"></textarea>
+                  <div class="about__contacts-dialog-bot">
+                    <button type="submit" class="about__contacts-dialog-btn">Отправить</button>
+                  </div>
+                </form>
+              </div>
+              <button
+              type="button"
+              class="about__contacts-dialog-btn-close"
+              aria-label="Закрыть">
+              <!-- иконка крестик -->
+              </button>
+            </div>
+            <!-- Dialog contacts end -->
           </div>
           <!-- /.about__contacts -->
         </div>
