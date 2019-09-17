@@ -213,15 +213,38 @@
                 <button class="catalog__filter-show-btn" type="submit">
                   Показать
                 </button>
+                <!-- /.catalog__filter-show-btn -->
               </form>
-              <!-- /.catalog__filter-show-btn -->
+              <!-- /.catalog__filter-form -->
             </div>
             <!-- /.catalog__filter -->
             <div class="catalog__content">
-              <div class="catalog__content-header">
-
+              <div class="catalog__content-sort">
+                <span class="catalog__content-sort-title">Сортировка:</span>
+                <ul
+                class="catalog__content-header-sort-list"
+                role="menu">
+                  <li class="catalog__content-header-sort-item" role="none">
+                    <button
+                    class="catalog__content-header-sort-btn"
+                    type="button"
+                    role="menuitem">по цене</button>
+                  </li>
+                  <li class="catalog__content-header-sort-item" role="none">
+                    <button
+                    class="catalog__content-header-sort-btn"
+                    type="button"
+                    role="menuitem">по типу</button>
+                  </li>
+                  <li class="catalog__content-header-sort-item" role="none">
+                    <button
+                    class="catalog__content-header-sort-btn"
+                    type="button"
+                    role="menuitem">по функционалу</button>
+                  </li>
+                </ul>
               </div>
-              <!-- /.catalog__content-header -->
+              <!-- /.catalog__content-sort -->
               <div class="catalog__content-product">
                 <ul class="catalog__content-product-list">
                   <li class="catalog__content-product-card product-card">
@@ -472,8 +495,7 @@
               href="#"
               class="footer__socials-link footer__socials-link-fb"
               aria-label="Техномарт в Фэйсбуке"
-            >
-            </a>
+            ></a>
           </li>
           <li class="footer__socials-item">
             <a
@@ -486,11 +508,11 @@
         <!-- /.footer__socials-list -->
         <p class="footer__mail">
           Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru" class="footer__mail-link" aria-label="Почта техномарт">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru" class="footer__mail-link" aria-label="Написать письмо Техномарт">mail@htmlacademy.ru</a>
         </p>
         <p class="footer__author">
           Разработано —
-          <a href="#" class="footer__author-link">htmlacademy.ru</a>
+          <a href="#" class="footer__author-link" aria-label="Разработчик">htmlacademy.ru</a>
         </p>
       </div>
       <!-- /.footer__bot-section -->
