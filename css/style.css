@@ -224,7 +224,7 @@ body {
           transform: translate(0, -45%);
   width: 15px;
   height: 16px;
-  background: url("img/svg/icon-bookmark.svg") no-repeat;
+  background: url("../../img/svg/icon-bookmark.svg") no-repeat;
   opacity: .3;
 }
 
@@ -246,7 +246,7 @@ body {
   height: 16px;
   -webkit-transform: translate(0, -45%);
           transform: translate(0, -45%);
-  background: url("img/svg/icon-cart.svg") no-repeat;
+  background: url("../../img/svg/icon-cart.svg") no-repeat;
   opacity: .3;
 }
 
@@ -322,7 +322,7 @@ body {
   padding: 10px 50px 8px 70px;
   font-size: 21px;
   color: #ee3643;
-  background: url("img/svg/icon-phone.svg") no-repeat 10px;
+  background: url("../../img/svg/icon-phone.svg") no-repeat 10px;
 }
 
 .main-header__info .address {
@@ -338,7 +338,7 @@ body {
       align-self: flex-start;
   font-size: 21px;
   background-color: #fff;
-  background-image: url("img/svg/icon-login.svg");
+  background-image: url("../../img/svg/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 15px center;
   color: #000;
@@ -350,7 +350,7 @@ body {
 
 .main-header .login-btn:active {
   color: #b2b2b2;
-  background-image: url("img/svg/icon-login_active.svg");
+  background-image: url("../../img/svg/icon-login_active.svg");
 }
 
 .main-header .reg-btn {
@@ -709,19 +709,19 @@ body {
 }
 
 .footer__socials-item:nth-child(1) a {
-  background-image: url("img/svg/icon-vk.svg");
+  background-image: url("../../img/svg/icon-vk.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .footer__socials-item:nth-child(2) a {
-  background-image: url("img/svg/icon-fb.svg");
+  background-image: url("../../img/svg/icon-fb.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .footer__socials-item:nth-child(3) a {
-  background-image: url("img/svg/icon-insta.svg");
+  background-image: url("../../img/svg/icon-insta.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
