@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon-logout</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1079.000000, -653.000000)" fill="#32425C" fill-rule="nonzero" id="top-menu">
+            <g transform="translate(-55.000000, 0.000000)">
+                <g id="Group-4" transform="translate(1134.000000, 561.000000)">
+                    <g id="icon-logout" transform="translate(0.000000, 92.000000)">
+                        <polygon id="Shape" points="20 8.5 11.125 0 11.125 6 5.125 6 5.125 11 11.125 11 11.125 17"></polygon>
+                        <path d="M2.106,13.952 L2.106,3.048 C2.124,2.672 2.277,1.991 3.116,1.991 L8.143,1.991 L8.143,0 L3.116,0 C0.938,0 0.112,1.81 0.087,3.027 L0.087,13.973 C0.112,15.189 0.938,17 3.116,17 L8.143,17 L8.143,15.01 L3.116,15.01 C2.277,15.01 2.124,14.327 2.106,13.952 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

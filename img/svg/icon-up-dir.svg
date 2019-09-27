@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon-down-dir</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-810.000000, -2850.000000)" fill="#C5C5C5" fill-rule="nonzero" id="top-menu">
+            <g transform="translate(-55.000000, 0.000000)">
+                <g id="Group-7" transform="translate(865.000000, 2758.000000)">
+                    <g id="icon-down-dir" transform="translate(5.500000, 97.000000) rotate(-180.000000) translate(-5.500000, -97.000000) translate(0.000000, 92.000000)">
+                        <polyline id="Shape" points="5.5 10 0 0 11 0"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
