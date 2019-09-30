@@ -898,7 +898,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 70px 13px 47px;
+  padding: 10px 70px 13px 0;
   font-size: 21px;
   background-color: #fff;
 }
@@ -910,6 +910,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 47px;
   color: #000;
   text-decoration: none;
 }
@@ -1447,7 +1448,7 @@ body {
 }
 
 .catalog__content-sort-btn_up_active {
-  background-image: url("/img/svg/icon-up-dir_active.svg");
+  background-image: url("../img/svg/icon-up-dir_active.svg");
 }
 
 .catalog__content-sort-btn_down {
