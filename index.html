@@ -86,121 +86,159 @@
     </header>
     <!-- /.main-header -->
     <main class="main">
-      <section class="menu-grid">
-        <h2 class="menu-grid__title">Меню</h2>
+      <div class="menu-grid">
+        <h2 class="menu-grid__title visuallyhidden">Меню</h2>
         <div class="container">
-          <nav class="menu-grid__menu" aria-label="Меню">
-            <ul class="menu-grid__menu-list">
-              <li class="menu-grid__menu-item">
-                <a href="#" class="menu-grid__menu-card">
-                  <h3 class="menu-grid__menu-card-title">Материалы</h3>
-                  <p class="menu-grid__menu-card-desc">на любой вкус</p>
-                  <svg class="menu-grid__menu-card-icon"></svg>
-                </a>
+          <nav class="menu-grid__menu clearfix" aria-label="Меню">
+            <ul class="menu-grid__menu-list clearfix">
+              <li class="menu-grid__menu-item" tabindex="0">
+                <h3 class="menu-grid__menu-item-title">Материалы</h3>
+                <a href="#" class="menu-grid__menu-item-link">на любой вкус</a>
+                <img
+                class="menu-grid__menu-item-icon"
+                src="img/svg/icon-1.svg"
+                alt=""
+                role="presentation">
               </li>
-              <li class="menu-grid__menu-item">
-                <a href="#" class="menu-grid__menu-card">
-                  <h3 class="menu-grid__menu-card-title">Инструмент </h3>
-                  <p class="menu-grid__menu-card-desc">на все случаи</p>
-                  <svg class="menu-grid__menu-card-icon"></svg>
-                </a>
+              <li class="menu-grid__menu-item" tabindex="0">
+                <h3 class="menu-grid__menu-item-title">Инструмент </h3>
+                <a href="#" class="menu-grid__menu-item-link">на все случаи</a>
+                <img
+                class="menu-grid__menu-item-icon"
+                src="img/svg/icon-2.svg"
+                alt=""
+                role="presentation">
               </li>
-              <li class="menu-grid__menu-item">
-                <a href="#" class="menu-grid__menu-card">
-                  <h3 class="menu-grid__menu-card-title">Техника </h3>
-                  <p class="menu-grid__menu-card-desc">для стройки</p>
-                  <svg class="menu-grid__menu-card-icon"></svg>
-                </a>
+              <li class="menu-grid__menu-item" tabindex="0">
+                <h3 class="menu-grid__menu-item-title">Техника </h3>
+                <a href="#" class="menu-grid__menu-item-link">для стройки</a>
+                <img
+                class="menu-grid__menu-item-icon"
+                src="img/svg/icon-3.svg"
+                alt=""
+                role="presentation">
               </li>
-              <li class="menu-grid__menu-item">
-                <a href="#" class="menu-grid__menu-card">
-                  <h3 class="menu-grid__menu-card-title">Скидки 50% </h3>
-                  <p class="menu-grid__menu-card-desc">на 350 товаров</p>
-                  <svg class="menu-grid__menu-card-icon"></svg>
-                </a>
+              <li class="menu-grid__menu-item" tabindex="0">
+                <div
+                class="menu-grid__menu-slider"
+                aria-roledescription="Слайдер"
+                aria-label="Продукция магазина">
+                  <div class="menu-grid__menu-slider-inner">
+                    <button
+                    class="menu-grid__menu-slider-control
+                            menu-grid__menu-slider-control_prev"
+                    aria-controls="slider-items"
+                    aria-label="Следующий слайд">
+                      <img
+                      src="img/svg/icon-left.svg"
+                      alt=""
+                      width="22"
+                      height="40">
+                    </button>
+                    <button
+                    class="menu-grid__menu-slider-control
+                            menu-grid__menu-slider-control_next"
+                    aria-controls="slider-items"
+                    aria-label="Предидущий слайд">
+                      <img
+                      src="img/svg/icon-right.svg"
+                      alt=""
+                      width="22"
+                      height="40">
+                    </button>
+                    <button
+                    class="menu-grid__menu-slider-dot menu-grid__menu-slider-dot_first menu-grid__menu-slider-dot_active"
+                    aria-controls="slider-items"
+                    aria-label="Первый слайд">
+                    </button>
+                    <button
+                    class="menu-grid__menu-slider-dot menu-grid__menu-slider-dot_second menu-grid__menu-slider-dot"
+                    aria-controls="slider-items"
+                    aria-label="Второй слайд">
+                    </button>
+                    <div
+                    class="menu-grid__menu-slider-items"
+                    id="slider-items"
+                    aria-live="assertive">
+                      <div
+                      class="menu-grid__menu-slider-item active"
+                      role="group"
+                      aria-roledescription="Слайд"
+                      aria-label="1 из 2">
+                        <div class="menu-grid__menu-slider-item-image">
+                          <a href="#">
+                            <img
+                            src="img/slider__slide1.jpg"
+                            width="620"
+                            height="266"
+                            alt="Строитель орудует перфоратором Bosh на ЖБИ изделии">
+                          </a>
+                        </div>
+                        <!-- /.menu-grid__menu-slider-image -->
+                        <div class="menu-grid__menu-slider-item-caption">
+                          <h3 class="menu-grid__menu-slider-item-caption-title">Перфораторы </h3>
+                          <p class="menu-grid__menu-slider-item-caption-desc">Настоящие мужские игрушки</p>
+                        </div>
+                        <a
+                        href="catalog.html"
+                        class="menu-grid__menu-slider-item-btn">
+                          открыть каталог
+                        </a>
+                      </div>
+                      <!-- /.menu-grid__menu-slider-item -->
+                      <div
+                      class="menu-grid__menu-slider-item"
+                      role="group"
+                      aria-roledescription="Слайд"
+                      aria-label="2 из 2">
+                        <div class="menu-grid__menu-slider-item-image">
+                          <a href="#">
+                            <img
+                            src="img/slider__slide2.jpg"
+                            width="620"
+                            height="266"
+                            alt="Строитель орудует дрелю Bosh по кирпичной стене">
+                          </a>
+                        </div>
+                        <!-- /.menu-grid__menu-slider-image -->
+                        <div class="menu-grid__menu-slider-item-caption">
+                          <h3 class="menu-grid__menu-slider-item-caption-title">Дрели</h3>
+                          <p class="menu-grid__menu-slider-item-caption-desc">Соседям на радость</p>
+                        </div>
+                        <a
+                        href="#"
+                        class="menu-grid__menu-slider-item-btn">
+                          открыть каталог
+                        </a>
+                      </div>
+                      <!-- /.menu-grid__menu-slider-item -->
+                    </div>
+                    <!-- /.menu-grid__menu-slider-items -->
+                  </div>
+                  <!-- /.menu-grid__menu-slider-inner -->
+                </div>
+                <!-- /.menu-grid__menu-slider -->
               </li>
-              <li class="menu-grid__menu-item">
-                <a href="#" class="menu-grid__menu-card">
-                  <h3 class="menu-grid__menu-card-title">Доставка </h3>
-                  <p class="menu-grid__menu-card-desc">бесплатно</p>
-                  <svg class="menu-grid__menu-card-icon"></svg>
-                </a>
+              <li class="menu-grid__menu-item" tabindex="0">
+                <h3 class="menu-grid__menu-item-title">Скидки 50% </h3>
+                <a href="#" class="menu-grid__menu-item-link">на 350 товаров</a>
+                <img
+                class="menu-grid__menu-item-icon"
+                src="img/svg/icon-4.svg"
+                alt=""
+                role="presentation"></img>
+              </li>
+              <li class="menu-grid__menu-item" tabindex="0">
+                <h3 class="menu-grid__menu-item-title">Доставка </h3>
+                <a href="#" class="menu-grid__menu-item-link">бесплатно</a>
+                <img
+                class="menu-grid__menu-item-icon"
+                src="img/svg/icon-5.svg"
+                alt=""
+                role="presentation"></img>
               </li>
             </ul>
             <!-- /.menu-grid__menu-list -->
-            <section
-            class="menu-grid__menu-slider"
-            aria-roledescription="Слайдер"
-            aria-label="Продукция магазина">
-              <div class="menu-grid__menu-slider-inner">
-                <button
-                class="menu-grid__menu-slider-control
-                       menu-grid__menu-slider-control_prev"
-                aria-controls="slider-items"
-                aria-label="Следующий слайд">
-                  <svg></svg>
-                </button>
-                <button
-                class="menu-grid__menu-slider-control
-                       menu-grid__menu-slider-control_next"
-                aria-controls="slider-items"
-                aria-label="Предидущий слайд">
-                  <svg></svg>
-                </button>
-                <div
-                class="menu-grid__menu-slider-items"
-                id="slider-items"
-                aria-live="assertive">
-                  <div
-                  class="menu-grid__menu-slider-item active"
-                  role="group"
-                  aria-roledescription="Слайд"
-                  aria-label="1 из 2">
-                    <div class="menu-grid__menu-slider-item-image">
-                      <a href="#">
-                        <img src="https://via.placeholder.com/150x100" alt="Перфораторы">
-                      </a>
-                    </div>
-                    <!-- /.menu-grid__menu-slider-image -->
-                    <div class="menu-grid__menu-slider-item-caption">
-                      <h3 class="menu-grid__menu-slider-item-caption-title">Перфораторы </h3>
-                      <p class="menu-grid__menu-slider-item-desc">Настоящие мужские игрушки</p>
-                    </div>
-                    <a
-                    href="catalog.html"
-                    class="menu-grid__menu-slider-item-btn">
-                      открыть каталог
-                    </a>
-                  </div>
-                  <!-- /.menu-grid__menu-slider-item -->
-                  <div
-                  class="menu-grid__menu-slider-item"
-                  role="group"
-                  aria-roledescription="Слайд"
-                  aria-label="2 из 2">
-                    <div class="menu-grid__menu-slider-item-image">
-                      <a href="#">
-                        <img src="https://via.placeholder.com/150x100" alt="Дрели">
-                      </a>
-                    </div>
-                    <!-- /.menu-grid__menu-slider-image -->
-                    <div class="menu-grid__menu-slider-item-caption">
-                      <h3 class="menu-grid__menu-slider-item-caption-title">Дрели</h3>
-                      <p class="menu-grid__menu-slider-item-desc">Соседям на радость</p>
-                    </div>
-                    <a
-                    href="#"
-                    class="menu-grid__menu-slider-item-btn">
-                      открыть каталог
-                    </a>
-                  </div>
-                  <!-- /.menu-grid__menu-slider-item -->
-                </div>
-                <!-- /.menu-grid__menu-slider-items -->
-              </div>
-              <!-- /.menu-grid__menu-slider-inner -->
-            </section>
-            <!-- /.menu-grid__menu-slider -->
           </nav>
           <!-- /.menu-grid__menu -->
         </div>
@@ -216,47 +254,55 @@
           <!-- /.popular-products__header -->
           <ul class="popular-products__list">
             <li class="popular-products__product-card product-card" tabindex="0">
-              <img src="/img/products/bosh_bfg_9000.jpg"
-              alt="Перфоратор BOSCH  BFG 9000"
-              width="184"
-              height="164"
-              class="popular-products__product-card-img product-card-img">
-              <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 9000</h3>
-              <span class="popular-products__product-card-last-price product-card-last-price">32500 Р.</span>
-              <a href="#" class="popular-products__product-card-price product-card-price" role="button">25500 Р.</a>
+              <div class="product-card__img-block">
+                <img src="/img/products/bosh_bfg_9000.jpg"
+                alt="Перфоратор BOSCH  BFG 9000"
+                width="184"
+                height="164"
+                class="popular-products__product-card-img product-card-img">
+              </div>
+              <h3 class="popular-products__product-card-title product-card__title">Перфоратор BOSCH  BFG 9000</h3>
+              <span class="popular-products__product-card-last-price product-card__lastprice">32500 Р.</span>
+              <a href="#" class="popular-products__product-card-price product-card__price" role="button">25500 Р.</a>
             </li>
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card product-card" tabindex="0">
-              <img src="/img/products/bosh_bfg_3000.jpg"
-              alt="Перфоратор BOSCH  BFG 3000"
-              width="127"
-              height="112"
-              class="popular-products__product-card-img product-card-img">
-              <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 3000</h3>
-              <span class="popular-products__product-card-last-price product-card-last-price">22500 Р.</span>
-              <a href="#" class="popular-products__product-card-price product-card-price" role="button">15500 Р.</a>
+              <div class="product-card__img-block">
+                <img src="/img/products/bosh_bfg_3000.jpg"
+                alt="Перфоратор BOSCH  BFG 3000"
+                width="127"
+                height="112"
+                class="popular-products__product-card-img product-card-img">
+              </div>
+              <h3 class="popular-products__product-card-title product-card__title">Перфоратор BOSCH  BFG 3000</h3>
+              <span class="popular-products__product-card-last-price product-card__lastprice">22500 Р.</span>
+              <a href="#" class="popular-products__product-card-price product-card__price" role="button">15500 Р.</a>
             </li>
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card product-card" tabindex="0">
-              <img src="/img/products/bosh_bfg_6000.jpg"
-              alt="Перфоратор BOSCH  BFG 6000"
-              width="144"
-              height="128"
-              class="popular-products__product-card-img product-card-img">
-              <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 6000</h3>
-              <span class="popular-products__product-card-last-price product-card-last-price">30500 Р.</span>
-              <a href="#" class="popular-products__product-card-price product-card-price" role="button">25500 Р.</a>
+              <div class="product-card__img-block">
+                <img src="/img/products/bosh_bfg_6000.jpg"
+                alt="Перфоратор BOSCH  BFG 6000"
+                width="144"
+                height="128"
+                class="popular-products__product-card-img product-card-img">
+              </div>
+              <h3 class="popular-products__product-card-title product-card__title">Перфоратор BOSCH  BFG 6000</h3>
+              <span class="popular-products__product-card-last-price product-card__lastprice">30500 Р.</span>
+              <a href="#" class="popular-products__product-card-price product-card__price" role="button">25500 Р.</a>
             </li>
             <!-- popular-products__product-card -->
-            <li class="popular-products__product-card product-card" tabindex="0">
-              <img src="/img/products/bosh_bfg_2000.jpg"
-              alt="Перфоратор BOSCH  BFG 2000"
-              width="127"
-              height="112"
-              class="popular-products__product-card-img product-card-img">
-              <h3 class="popular-products__product-card-title product-card-title">Перфоратор BOSCH  BFG 2000</h3>
-              <span class="popular-products__product-card-last-price product-card-last-price"></span>
-              <a href="#" class="popular-products__product-card-price product-card-prole=" role="button">12500 Р.</a>
+            <li class="popular-products__product-card_new product-card" tabindex="0">
+              <div class="product-card__img-block">
+                <img src="/img/products/bosh_bfg_2000.jpg"
+                alt="Перфоратор BOSCH  BFG 2000"
+                width="127"
+                height="112"
+                class="popular-products__product-card-img product-card-img">
+              </div>
+              <h3 class="popular-products__product-card-title product-card__title">Перфоратор BOSCH  BFG 2000</h3>
+              <span class="popular-products__product-card-last-price product-card__lastprice"></span>
+              <a href="#" class="popular-products__product-card-price product-card__price" role="button">12500 Р.</a>
             </li>
             <!-- popular-products__product-card -->
           </ul>
@@ -274,60 +320,76 @@
           <!-- /.popular-producers__header -->
           <ul class="popular-producers__list">
             <li class="popular-producers__item">
-              <img src="/img/producers/bosch.jpg"
-              alt="Bosh"
-              width="126"
-              height="37"
-              class="popular-producers__logo">
+              <a href="#">
+                <img src="/img/producers/bosch.jpg"
+                alt="Bosh"
+                width="126"
+                height="37"
+                class="popular-producers__logo">
+              </a>
             </li>
             <li class="popular-producers__item">
-              <img src="/img/producers/makita.jpg"
-              alt="Makita"
-              width="123"
-              height="40"
-              class="popular-producers__logo">
+              <a href="#">
+                <img src="/img/producers/makita.jpg"
+                alt="Makita"
+                width="123"
+                height="40"
+                class="popular-producers__logo">
+              </a>
             </li>
             <li class="popular-producers__item">
-              <img src="/img/producers/DeWALT.jpg"
-              alt="DeWALT"
-              width="146"
-              height="44"
-              class="popular-producers__logo">
+              <a href="#">
+                <img src="/img/producers/DeWALT.jpg"
+                alt="DeWALT"
+                width="146"
+                height="44"
+                class="popular-producers__logo">
+              </a>
             </li>
             <li class="popular-producers__item">
-              <img src="/img/producers/interskol.jpg"
-              alt="Interskol"
-              width="200"
-              height="88"
-              class="popular-producers__logo">
+              <a href="#">
+                <img src="/img/producers/interskol.jpg"
+                alt="Interskol"
+                width="200"
+                height="88"
+                class="popular-producers__logo">
+              </a>
             </li>
             <li class="popular-producers__item">
-              <img src="/img/producers/hitachi.jpg"
-              alt="Hitachi"
-              width="169"
-              height="31"
-              class="popular-producers__logo">
+              <a href="#">
+                <img src="/img/producers/hitachi.jpg"
+                alt="Hitachi"
+                width="169"
+                height="31"
+                class="popular-producers__logo">
+              </a>
             </li>
             <li class="popular-producers__item">
-              <img src="/img/producers/lg.jpg"
-              alt="LG"
-              width="121"
-              height="73"
-              class="popular-producers__logo">
+              <a href="#">
+                <img src="/img/producers/lg.jpg"
+                alt="LG"
+                width="121"
+                height="73"
+                class="popular-producers__logo">
+              </a>
             </li>
             <li class="popular-producers__item">
-              <img src="/img/producers/aeg.jpg"
-              alt="AEG"
-              width="151"
-              height="96"
-              class="popular-producers__logo">
+              <a href="#">
+                <img src="/img/producers/aeg.jpg"
+                alt="AEG"
+                width="151"
+                height="96"
+                class="popular-producers__logo">
+              </a>
             </li>
             <li class="popular-producers__item">
-              <img src="/img/producers/metabo.jpg"
-              alt="Metabo"
-              width="204"
-              height="69"
-              class="popular-producers__logo">
+              <a href="#">
+                <img src="/img/producers/metabo.jpg"
+                alt="Metabo"
+                width="204"
+                height="69"
+                class="popular-producers__logo">
+              </a>
             </li>
           </ul>
           <!-- /.popular-producers__list -->
@@ -348,7 +410,7 @@
           </header>
           <!-- /.services__header -->
           <div class="services__accordeon">
-            <ul class="service__accordeon-list">
+            <ul class="services__accordeon-list">
               <li class="services__accordeon-item">
                 <h3 class="services__accordeon-item-toggle">
                   <button
