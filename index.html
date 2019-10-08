@@ -17,7 +17,7 @@
             width="109"
             height="19">
           </a>
-          <form action="#" role="search" class="main-header__top-section-searchform">
+          <form action="#" role="search" class="main-header__searchform">
             <input
             type="search"
             class="main-header__search-field"
@@ -86,48 +86,48 @@
     </header>
     <!-- /.main-header -->
     <main class="main">
-      <div class="menu-grid">
-        <h2 class="menu-grid__title visuallyhidden">Меню</h2>
+      <section class="menu-grid">
+        <h2 class="menu-grid__title visually-hidden">Меню</h2>
         <div class="container">
-          <nav class="menu-grid__menu clearfix" aria-label="Меню">
-            <ul class="menu-grid__menu-list clearfix">
-              <li class="menu-grid__menu-item" tabindex="0">
-                <h3 class="menu-grid__menu-item-title">Материалы</h3>
-                <a href="#" class="menu-grid__menu-item-link">на любой вкус</a>
+          <nav class="menu clearfix" aria-label="Меню">
+            <ul class="menu__list clearfix">
+              <li class="menu__item" tabindex="0">
+                <h3 class="menu__item-title">Материалы</h3>
+                <a href="#" class="menu__item-link">на любой вкус</a>
                 <img
-                class="menu-grid__menu-item-icon"
+                class="menu__item-icon"
                 src="img/svg/icon-1.svg"
                 alt=""
                 role="presentation">
               </li>
-              <li class="menu-grid__menu-item" tabindex="0">
-                <h3 class="menu-grid__menu-item-title">Инструмент </h3>
-                <a href="#" class="menu-grid__menu-item-link">на все случаи</a>
+              <li class="menu__item" tabindex="0">
+                <h3 class="menu__item-title">Инструмент </h3>
+                <a href="#" class="menu__item-link">на все случаи</a>
                 <img
-                class="menu-grid__menu-item-icon"
+                class="menu__item-icon"
                 src="img/svg/icon-2.svg"
                 alt=""
                 role="presentation">
               </li>
-              <li class="menu-grid__menu-item" tabindex="0">
-                <h3 class="menu-grid__menu-item-title">Техника </h3>
-                <a href="#" class="menu-grid__menu-item-link">для стройки</a>
+              <li class="menu__item" tabindex="0">
+                <h3 class="menu__item-title">Техника </h3>
+                <a href="#" class="menu__item-link">для стройки</a>
                 <img
-                class="menu-grid__menu-item-icon"
+                class="menu__item-icon"
                 src="img/svg/icon-3.svg"
                 alt=""
                 role="presentation">
               </li>
-              <li class="menu-grid__menu-item" tabindex="0">
+              <li class="menu__item" tabindex="0">
                 <div
-                class="menu-grid__menu-slider"
+                class="slider"
                 aria-roledescription="Слайдер"
                 aria-label="Продукция магазина">
-                  <div class="menu-grid__menu-slider-inner">
+                  <div class="slider__inner">
                     <button
-                    class="menu-grid__menu-slider-control
-                            menu-grid__menu-slider-control_prev"
-                    aria-controls="slider-items"
+                    class="slider__control
+                            slider__control_prev"
+                    aria-controls="slider__items"
                     aria-label="Следующий слайд">
                       <img
                       src="img/svg/icon-left.svg"
@@ -136,9 +136,9 @@
                       height="40">
                     </button>
                     <button
-                    class="menu-grid__menu-slider-control
-                            menu-grid__menu-slider-control_next"
-                    aria-controls="slider-items"
+                    class="slider__control
+                            slider__control_next"
+                    aria-controls="slider__items"
                     aria-label="Предидущий слайд">
                       <img
                       src="img/svg/icon-right.svg"
@@ -147,25 +147,25 @@
                       height="40">
                     </button>
                     <button
-                    class="menu-grid__menu-slider-dot menu-grid__menu-slider-dot_first menu-grid__menu-slider-dot_active"
-                    aria-controls="slider-items"
+                    class="slider__dot slider__dot_first slider__dot_active"
+                    aria-controls="slider__items"
                     aria-label="Первый слайд">
                     </button>
                     <button
-                    class="menu-grid__menu-slider-dot menu-grid__menu-slider-dot_second menu-grid__menu-slider-dot"
-                    aria-controls="slider-items"
+                    class="slider__dot slider__dot_second"
+                    aria-controls="slider__items"
                     aria-label="Второй слайд">
                     </button>
                     <div
-                    class="menu-grid__menu-slider-items"
-                    id="slider-items"
+                    class="slider__items"
+                    id="slider__items"
                     aria-live="assertive">
                       <div
-                      class="menu-grid__menu-slider-item active"
+                      class="slider__item slider__item_active"
                       role="group"
                       aria-roledescription="Слайд"
                       aria-label="1 из 2">
-                        <div class="menu-grid__menu-slider-item-image">
+                        <div class="slider__item-image">
                           <a href="#">
                             <img
                             src="img/slider__slide1.jpg"
@@ -174,24 +174,24 @@
                             alt="Строитель орудует перфоратором Bosh на ЖБИ изделии">
                           </a>
                         </div>
-                        <!-- /.menu-grid__menu-slider-image -->
-                        <div class="menu-grid__menu-slider-item-caption">
-                          <h3 class="menu-grid__menu-slider-item-caption-title">Перфораторы </h3>
-                          <p class="menu-grid__menu-slider-item-caption-desc">Настоящие мужские игрушки</p>
+                        <!-- /.slider__image -->
+                        <div class="slider__item-caption">
+                          <h3 class="slider__item-caption-title">Перфораторы </h3>
+                          <p class="slider__item-caption-desc">Настоящие мужские игрушки</p>
                         </div>
                         <a
                         href="catalog.html"
-                        class="menu-grid__menu-slider-item-btn">
+                        class="slider__item-btn">
                           открыть каталог
                         </a>
                       </div>
-                      <!-- /.menu-grid__menu-slider-item -->
+                      <!-- /.slider__item -->
                       <div
-                      class="menu-grid__menu-slider-item"
+                      class="slider__item"
                       role="group"
                       aria-roledescription="Слайд"
                       aria-label="2 из 2">
-                        <div class="menu-grid__menu-slider-item-image">
+                        <div class="slider__item-image">
                           <a href="#">
                             <img
                             src="img/slider__slide2.jpg"
@@ -200,47 +200,47 @@
                             alt="Строитель орудует дрелю Bosh по кирпичной стене">
                           </a>
                         </div>
-                        <!-- /.menu-grid__menu-slider-image -->
-                        <div class="menu-grid__menu-slider-item-caption">
-                          <h3 class="menu-grid__menu-slider-item-caption-title">Дрели</h3>
-                          <p class="menu-grid__menu-slider-item-caption-desc">Соседям на радость</p>
+                        <!-- /.slider__image -->
+                        <div class="slider__item-caption">
+                          <h3 class="slider__item-caption-title">Дрели</h3>
+                          <p class="slider__item-caption-desc">Соседям на радость</p>
                         </div>
                         <a
                         href="#"
-                        class="menu-grid__menu-slider-item-btn">
+                        class="slider__item-btn">
                           открыть каталог
                         </a>
                       </div>
-                      <!-- /.menu-grid__menu-slider-item -->
+                      <!-- /.slider__item -->
                     </div>
-                    <!-- /.menu-grid__menu-slider-items -->
+                    <!-- /.slider__items -->
                   </div>
-                  <!-- /.menu-grid__menu-slider-inner -->
+                  <!-- /.slider__inner -->
                 </div>
-                <!-- /.menu-grid__menu-slider -->
+                <!-- /.slider -->
               </li>
-              <li class="menu-grid__menu-item" tabindex="0">
-                <h3 class="menu-grid__menu-item-title">Скидки 50% </h3>
-                <a href="#" class="menu-grid__menu-item-link">на 350 товаров</a>
+              <li class="menu__item" tabindex="0">
+                <h3 class="menu__item-title">Скидки 50% </h3>
+                <a href="#" class="menu__item-link">на 350 товаров</a>
                 <img
-                class="menu-grid__menu-item-icon"
+                class="menu__item-icon"
                 src="img/svg/icon-4.svg"
                 alt=""
-                role="presentation"></img>
+                role="presentation">
               </li>
-              <li class="menu-grid__menu-item" tabindex="0">
-                <h3 class="menu-grid__menu-item-title">Доставка </h3>
-                <a href="#" class="menu-grid__menu-item-link">бесплатно</a>
+              <li class="menu__item" tabindex="0">
+                <h3 class="menu__item-title">Доставка </h3>
+                <a href="#" class="menu__item-link">бесплатно</a>
                 <img
-                class="menu-grid__menu-item-icon"
+                class="menu__item-icon"
                 src="img/svg/icon-5.svg"
                 alt=""
-                role="presentation"></img>
+                role="presentation">
               </li>
             </ul>
-            <!-- /.menu-grid__menu-list -->
+            <!-- /.menu__list -->
           </nav>
-          <!-- /.menu-grid__menu -->
+          <!-- /.menu-->
         </div>
         <!-- /.container -->
       </section>
@@ -259,11 +259,11 @@
                 alt="Перфоратор BOSCH  BFG 9000"
                 width="184"
                 height="164"
-                class="popular-products__product-card-img product-card-img">
+                class="product-card-img">
               </div>
-              <h3 class="popular-products__product-card-title product-card__title">Перфоратор BOSCH  BFG 9000</h3>
-              <span class="popular-products__product-card-last-price product-card__lastprice">32500 Р.</span>
-              <a href="#" class="popular-products__product-card-price product-card__price" role="button">25500 Р.</a>
+              <h3 class="product-card__title">Перфоратор BOSCH  BFG 9000</h3>
+              <span class="product-card__lastprice">32500 Р.</span>
+              <a href="#" class="product-card__price" role="button">25500 Р.</a>
             </li>
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card product-card" tabindex="0">
@@ -272,11 +272,11 @@
                 alt="Перфоратор BOSCH  BFG 3000"
                 width="127"
                 height="112"
-                class="popular-products__product-card-img product-card-img">
+                class="product-card-img">
               </div>
-              <h3 class="popular-products__product-card-title product-card__title">Перфоратор BOSCH  BFG 3000</h3>
-              <span class="popular-products__product-card-last-price product-card__lastprice">22500 Р.</span>
-              <a href="#" class="popular-products__product-card-price product-card__price" role="button">15500 Р.</a>
+              <h3 class="product-card__title">Перфоратор BOSCH  BFG 3000</h3>
+              <span class="product-card__lastprice">22500 Р.</span>
+              <a href="#" class="product-card__price" role="button">15500 Р.</a>
             </li>
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card product-card" tabindex="0">
@@ -285,11 +285,11 @@
                 alt="Перфоратор BOSCH  BFG 6000"
                 width="144"
                 height="128"
-                class="popular-products__product-card-img product-card-img">
+                class="product-card-img">
               </div>
-              <h3 class="popular-products__product-card-title product-card__title">Перфоратор BOSCH  BFG 6000</h3>
-              <span class="popular-products__product-card-last-price product-card__lastprice">30500 Р.</span>
-              <a href="#" class="popular-products__product-card-price product-card__price" role="button">25500 Р.</a>
+              <h3 class="product-card__title">Перфоратор BOSCH  BFG 6000</h3>
+              <span class="product-card__lastprice">30500 Р.</span>
+              <a href="#" class="product-card__price" role="button">25500 Р.</a>
             </li>
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card_new product-card" tabindex="0">
@@ -298,11 +298,11 @@
                 alt="Перфоратор BOSCH  BFG 2000"
                 width="127"
                 height="112"
-                class="popular-products__product-card-img product-card-img">
+                class="product-card-img">
               </div>
-              <h3 class="popular-products__product-card-title product-card__title">Перфоратор BOSCH  BFG 2000</h3>
-              <span class="popular-products__product-card-last-price product-card__lastprice"></span>
-              <a href="#" class="popular-products__product-card-price product-card__price" role="button">12500 Р.</a>
+              <h3 class="product-card__title">Перфоратор BOSCH  BFG 2000</h3>
+              <span class="product-card__lastprice"></span>
+              <a href="#" class="product-card__price" role="button">12500 Р.</a>
             </li>
             <!-- popular-products__product-card -->
           </ul>
@@ -469,10 +469,10 @@
             hidden>
               <span class="services__accordeon-pannel-title">Гарантия</span>
               <p class="services__accordeon-pannel-desc">
-                Если купленный у нас товар поломается или заискрит,
+                Если купленный у нас товар поломается или заискрит, <br>
                 а также в случае пожара, спровоцированного его
-                возгоранием,  вы всегда можете быть уверены в
-                нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
+                возгоранием, <br>вы всегда можете быть уверены в
+                нашей гарантии. Мы обменяем <br> сгоревший товар на новый. <br>
                 Дом уж восстановите как-нибудь сами.
               </p>
             </div>
@@ -541,11 +541,11 @@
             tabindex="-1"
             hidden>
               <div
-              class="about__contacts-dialog-content"
+              class="contacts__dialog-content"
               role="document">
-                <form action="#" class="about__contacts-dialog-form">
-                  <fieldset class="about__contacts-dialog-field">
-                    <ul class="about__contacts-dialog-field-list">
+                <form action="#" class="contacts__dialog-form">
+                  <fieldset class="contacts__dialog-field">
+                    <ul class="contacts__dialog-field-list">
                       <li>
                         <label for="name">Ваше имя:</label>
                         <input
@@ -571,14 +571,14 @@
                   </fieldset>
                   <label for="mailtext">Текст письма:</label>
                   <textarea name="text" id="mailtext" placeholder="В свободной форме"></textarea>
-                  <div class="about__contacts-dialog-bot">
-                    <button type="submit" class="about__contacts-dialog-btn">Отправить</button>
+                  <div class="contacts__dialog-bot">
+                    <button type="submit" class="contacts__dialog-btn">Отправить</button>
                   </div>
                 </form>
               </div>
               <button
               type="button"
-              class="about__contacts-dialog-btn-close"
+              class="contacts__dialog-btn-close"
               aria-label="Закрыть">
               <!-- иконка крестик -->
               </button>
