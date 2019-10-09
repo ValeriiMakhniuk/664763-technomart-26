@@ -24,9 +24,9 @@
             aria-label="Поиск по сайту"
             placeholder="Поиск:">
           </form>
-          <div class="main-header__tabs" role="tablist" aria-label="Вкладки">
-            <a href="#" class="main-header__bookmarks" role="tab" aria-selected="false">Закладки: 0</a>
-            <a href="#" class="main-header__basket" role="tab" aria-selected="false">Корзина: 0</a>
+          <div class="main-header__tabs" aria-label="Вкладки">
+            <a href="#" class="main-header__bookmarks">Закладки: 0</a>
+            <a href="#" class="main-header__basket">Корзина: 0</a>
           </div>
           <a href="#" class="main-header__order-btn" role="button">Оформить заказ</a>
         </div>
@@ -206,7 +206,7 @@
                           <p class="slider__item-caption-desc">Соседям на радость</p>
                         </div>
                         <a
-                        href="#"
+                        href="catalog.html"
                         class="slider__item-btn">
                           открыть каталог
                         </a>
@@ -527,63 +527,12 @@
               Вы можете забрать товар сами, заехав в наш офис:
             </p>
             <div class="about__contacts-map">
-              <img src="img/map.jpg" alt="Карта">
+              <a href="https://yandex.ru/maps">
+                <img src="img/map.jpg" alt="Карта">
+              </a>
             </div>
             <!-- /.about__contacts-map -->
             <a href="#" class="about__contacts-btn" role="button" id="writeus">Заблудились? Напишите нам!</a>
-            <!-- Dialog contacts start-->
-            <div
-            class="about__contacts-dialog visually-hidden"
-            id="dialogwrite"
-            aria-labelledby="writeus"
-            aria-modal="true"
-            role="dialog"
-            tabindex="-1"
-            hidden>
-              <div
-              class="contacts__dialog-content"
-              role="document">
-                <form action="#" class="contacts__dialog-form">
-                  <fieldset class="contacts__dialog-field">
-                    <ul class="contacts__dialog-field-list">
-                      <li>
-                        <label for="name">Ваше имя:</label>
-                        <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Имя Фамилия"
-                        autocomplete="name"
-                        required>
-                      </li>
-                      <li>
-                        <label for="email">Ваш email:</label>
-                        <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        autocapitalize="off"
-                        autocomplete="email"
-                        required
-                        placeholder="email@example.com">
-                      </li>
-                    </ul>
-                  </fieldset>
-                  <label for="mailtext">Текст письма:</label>
-                  <textarea name="text" id="mailtext" placeholder="В свободной форме"></textarea>
-                  <div class="contacts__dialog-bot">
-                    <button type="submit" class="contacts__dialog-btn">Отправить</button>
-                  </div>
-                </form>
-              </div>
-              <button
-              type="button"
-              class="contacts__dialog-btn-close"
-              aria-label="Закрыть">
-              <!-- иконка крестик -->
-              </button>
-            </div>
-            <!-- Dialog contacts end -->
           </div>
           <!-- /.about__contacts -->
         </div>
@@ -706,5 +655,59 @@
       <!-- /.footer__bot-section -->
     </footer>
     <!-- /.footer -->
+    <!-- Dialog contacts start-->
+    <div
+    class="about__contacts-dialog visually-hidden"
+    id="dialogwrite"
+    aria-labelledby="writeus"
+    aria-modal="true"
+    role="dialog">
+      <div
+      class="contacts__dialog-content">
+        <form action="#" method="POST" class="contacts__dialog-form">
+          <fieldset class="contacts__dialog-field">
+            <ul class="contacts__dialog-field-list">
+              <li>
+                <label for="name">Ваше имя:</label>
+                <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Имя Фамилия"
+                autocomplete="name"
+                >
+              </li>
+              <li>
+                <label for="email">Ваш email:</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                autocapitalize="off"
+                autocomplete="email"
+                placeholder="email@example.com"
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <div class="contacts__dialog-msg-block">
+            <label for="mailtext">Текст письма:</label>
+            <textarea name="text" id="mailtext" placeholder="В свободной форме"></textarea>
+          </div>
+          <div class="contacts__dialog-bot">
+            <button type="submit" class="contacts__dialog-btn">Отправить</button>
+          </div>
+        </form>
+        <button
+        type="button"
+        class="contacts__dialog-btn-close"
+        aria-label="Закрыть">
+          <img src="../img/svg/icon-close.svg" alt="Закрыть">
+        </button>
+      </div>
+    </div>
+    <!-- Dialog contacts end -->
+    <script src="js/scripts.js"></script>
+    <script src="js/accordion.js"></script>
   </body>
 </html>
