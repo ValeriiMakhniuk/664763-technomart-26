@@ -335,6 +335,7 @@ body {
   right: 5px;
   padding: 0;
   border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -365,6 +366,7 @@ body {
   right: 5px;
   padding: 0;
   border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -588,10 +590,11 @@ body {
   margin-top: 5px;
   margin-left: 52px;
   line-height: 23px;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: 'Cuprum N', Arial, sans-serif;
   font-weight: normal;
   font-style: italic;
   font-size: inherit;
+  letter-spacing: -0.45px;
   color: #ee3643;
 }
 
