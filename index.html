@@ -543,7 +543,7 @@
               Вы можете забрать товар сами, заехав в наш офис:
             </p>
             <div class="about__contacts-map">
-              <a href="https://yandex.ru/maps">
+              <a href="#">
                 <img src="img/map.jpg" alt="Карта">
               </a>
             </div>
@@ -740,8 +740,17 @@
       </div>
     </div>
     <!-- dialog buy end -->
+    <!-- map start -->
+    <div class="dialog-map visually-hidden">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGwiaXLw" width="940" height="447" frameborder="1" allowfullscreen="true"></iframe>
+        <button class="dialog-map__close-btn" type="button" aria-label="Закрыть">
+            <img src="../img/svg/icon-close.svg" alt="Закрыть">
+        </button>
+      </div>
+      <!-- map end -->
     <script src="js/contacts__modal.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/product-card_hover.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

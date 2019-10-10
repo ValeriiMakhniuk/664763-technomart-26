@@ -10,8 +10,6 @@ let isStorageSupport = true
 let storageName = ''
 let storageEmail = ''
 
-console.log(contactsModalForm)
-
 try {
   storageName = localStorage.getItem('name')
   storageEmail = localStorage.getItem('email')
