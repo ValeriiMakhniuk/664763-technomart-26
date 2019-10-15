@@ -5,6 +5,7 @@ const mapCloseBtn = map.querySelector('.dialog-map__close-btn')
 mapTrigger.addEventListener('click', e => {
   e.preventDefault()
   map.classList.remove('visually-hidden')
+  mapCloseBtn.focus()
 })
 
 mapCloseBtn.addEventListener('click', e => {
