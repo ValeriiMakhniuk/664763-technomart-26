@@ -4,58 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт-Каталог</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body>
+  <body id="catalog">
     <header class="main-header">
-        <div class="main-header__top-section">
-          <div class="container main-header__top-section-inner">
-            <a href="index.html" class="logo">
-              <img
-              src="img/svg/logo-technomart.svg"
-              alt="Логотип Техномарт"
-              width="109"
-              height="19">
-            </a>
-            <form action="#" role="search" class="main-header__searchform">
-              <input
-              type="search"
-              class="main-header__search-field"
-              aria-label="Поиск по сайту"
-              placeholder="Поиск:">
-            </form>
-            <div class="main-header__tabs" aria-label="Вкладки">
-              <a href="#" class="main-header__bookmarks">Закладки: 0</a>
-              <a href="#" class="main-header__basket main-header__basket_filled">Корзина: 10</a>
-            </div>
-            <a href="#" class="main-header__order-btn" role="button">Оформить заказ</a>
+      <div class="main-header__top-section">
+        <div class="container main-header__top-section-inner">
+          <a href="index.html" class="logo">
+            <img
+            src="img/svg/logo-technomart.svg"
+            alt="Логотип Техномарт"
+            width="109"
+            height="19">
+          </a>
+          <form action="#" role="search" class="main-header__searchform">
+            <input
+            type="search"
+            class="main-header__search-field"
+            aria-label="Поиск по сайту"
+            placeholder="Поиск:">
+          </form>
+          <div class="main-header__tabs" aria-label="Вкладки">
+            <a href="#" class="main-header__bookmarks">Закладки: 0</a>
+            <a href="#" class="main-header__basket main-header__basket_filled">Корзина: 10</a>
           </div>
-          <!-- /.container -->
+          <a href="#" class="main-header__order-btn" role="button">Оформить заказ</a>
         </div>
-        <!-- /.main-header__top-section -->
-        <div class="main-header__bot-section">
-          <div class="container main-header__bot-section-inner">
-            <div class="row">
-              <h1 class="main-header__main-title">
-                Интернет-магазин <br />
-                строительных материалов <br />
-                и инструментов для ремонта <br />
-              </h1>
-              <div class="main-header__info">
-                <a href="tel:+7-812-555-05-55" class="mobile" aria-label="Номер телефона магазина Техномаркет">+7 (812) 555-05-55</a>
-                <p class="address">
-                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                </p>
-              </div>
-              <!-- /.main-header__info -->
+        <!-- /.container -->
+      </div>
+      <!-- /.main-header__top-section -->
+      <div class="main-header__bot-section">
+        <div class="container main-header__bot-section-inner">
+          <div class="row">
+            <h1 class="main-header__main-title">
+              Интернет-магазин <br />
+              строительных материалов <br />
+              и инструментов для ремонта <br />
+            </h1>
+            <div class="main-header__info">
+              <a href="tel:+7-812-555-05-55" class="catalog__mobile" aria-label="Номер телефона магазина Техномаркет">+7 (812) 555-05-55</a>
+              <p class="address">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              </p>
+            </div>
+            <!-- /.main-header__info -->
             <div class="main-header__user-pannel">
               <div class="main-header__user">
                 <a href="#" class="main-header__username">Равшан Джамшутович</a>
-                <button type="button" class="main-header__exit-btn" aria-label="Личный кабинет">Выход</button>
+                <a href="#" role="button" class="main-header__exit-btn" aria-label="Личный кабинет">Выход</a>
               </div>
-              <!-- /.main-header__user -->
+            <!-- /.main-header__user -->
               <ul class="main-header__user-list" role="menu" tabindex="0" aria-label="Меню личный кабинет">
                 <li class="main-header__user-item" role="none presentation">
                   <a href="#" class="main-header__user-link" role="menuitem">Мои заказы</a>
@@ -99,7 +99,6 @@
         </div>
         <!-- /.main-header__bot-section -->
       </div>
-      <!-- /.container -->
     </header>
     <!-- /.main-header -->
     <main class="main">
@@ -138,7 +137,7 @@
               </div>
               <!-- /.catalog__filter-header -->
               <form method="get" class="catalog__filter-form" aria-labelledby="filter">
-                <fieldset class="catalog__filter-price clearfix">
+                <fieldset class="catalog__filter-price">
                   <legend class="catalog__filter-price-title">Цена:</legend>
                   <div class="catalog__filter-price-panel">
                     <div class="catalog__filter-price-rail">
@@ -247,31 +246,31 @@
                 class="catalog__content-sort-list"
                 role="menu">
                   <li class="catalog__content-sort-item" role="none presentation">
-                    <button
+                    <a
+                    href="#"
                     class="catalog__content-sort-type catalog__content-sort-type_active"
-                    type="button"
-                    role="menuitem">по цене</button>
+                    role="menuitem">по цене</a>
                   </li>
                   <li class="catalog__content-sort-item" role="none presentation">
-                    <button
+                    <a
+                    href="#"
                     class="catalog__content-sort-type"
-                    type="button"
-                    role="menuitem">по типу</button>
+                    role="menuitem">по типу</a>
                   </li>
                   <li class="catalog__content-sort-item" role="none presentation">
-                    <button
+                    <a
+                    href="#"
                     class="catalog__content-sort-type"
-                    type="button"
-                    role="menuitem">по функционалу</button>
+                    role="menuitem">по функционалу</a>
                   </li>
                 </ul>
                 <div class="catalog__content-sort-updown">
-                  <button class="catalog__content-sort-btn catalog__content-sort-btn_up catalog__content-sort-btn_up_active" type="button">
+                  <a href="#" class="catalog__content-sort-btn catalog__content-sort-btn_up catalog__content-sort-btn_up_active" role="button">
                     Сортировка с верху
-                  </button>
-                  <button class="catalog__content-sort-btn catalog__content-sort-btn_down" type="button">
-                      Сортировка с низу
-                  </button>
+                  </a>
+                  <a href="#" class="catalog__content-sort-btn catalog__content-sort-btn_down" role="button">
+                    Сортировка с низу
+                  </a>
                 </div>
               </div>
               <!-- /.catalog__content-sort -->
@@ -279,7 +278,7 @@
                 <ul class="catalog__content-product-list">
                   <li class="catalog__content-product-card product-card" tabindex="0" aria-haspopup="true">
                     <div class="product-card__img-block product-card__hover-block">
-                      <div class="product-card__controls visually-hidden">
+                      <div class="product-card__controls">
                         <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                         <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                       </div>
@@ -298,7 +297,7 @@
                   <!-- /.catalog__content-product-card -->
                   <li class="catalog__content-product-card product-card" tabindex="0" aria-haspopup="true">
                     <div class="product-card__img-block product-card__hover-block">
-                      <div class="product-card__controls visually-hidden">
+                      <div class="product-card__controls">
                         <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                         <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                       </div>
@@ -317,7 +316,7 @@
                   <!-- /.catalog__content-product-card -->
                   <li class="catalog__content-product-card_new product-card" tabindex="0">
                     <div class="product-card__img-block product-card__hover-block">
-                      <div class="product-card__controls visually-hidden">
+                      <div class="product-card__controls">
                         <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                         <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                       </div>
@@ -336,7 +335,7 @@
                   <!-- /.catalog__content-product-card -->
                   <li class="catalog__content-product-card product-card" tabindex="0" aria-haspopup="true">
                     <div class="product-card__img-block product-card__hover-block">
-                      <div class="product-card__controls visually-hidden">
+                      <div class="product-card__controls">
                         <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                         <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                       </div>
@@ -355,7 +354,7 @@
                   <!-- /.catalog__content-product-card -->
                   <li class="catalog__content-product-card_new product-card" tabindex="0">
                     <div class="product-card__img-block product-card__hover-block">
-                      <div class="product-card__controls visually-hidden">
+                      <div class="product-card__controls">
                         <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                         <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                       </div>
@@ -374,7 +373,7 @@
                   <!-- /.catalog__content-product-card -->
                   <li class="catalog__content-product-card product-card" tabindex="0" aria-haspopup="true">
                     <div class="product-card__img-block product-card__hover-block">
-                      <div class="product-card__controls visually-hidden">
+                      <div class="product-card__controls">
                         <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                         <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                       </div>
@@ -393,7 +392,7 @@
                   <!-- /.catalog__content-product-card -->
                   <li class="catalog__content-product-card_new product-card" tabindex="0">
                     <div class="product-card__img-block product-card__hover-block">
-                      <div class="product-card__controls visually-hidden">
+                      <div class="product-card__controls">
                         <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                         <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                       </div>
@@ -412,7 +411,7 @@
                   <!-- /.catalog__content-product-card -->
                   <li class="catalog__content-product-card product-card" tabindex="0" aria-haspopup="true">
                     <div class="product-card__img-block product-card__hover-block">
-                      <div class="product-card__controls visually-hidden">
+                      <div class="product-card__controls">
                         <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                         <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                       </div>
@@ -431,7 +430,7 @@
                   <!-- /.catalog__content-product-card -->
                   <li class="catalog__content-product-card product-card" tabindex="0" aria-haspopup="true">
                     <div class="product-card__img-block product-card__hover-block">
-                      <div class="product-card__controls visually-hidden">
+                      <div class="product-card__controls">
                         <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                         <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                       </div>
@@ -485,7 +484,7 @@
             Перфоратор — универсальный строительный инструмент.
             Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
             Существуют электромеханические и пневматические перфораторы.
-            Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br>
+            Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
             ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
@@ -624,6 +623,6 @@
         </div>
       </div>
       <!-- dialog buy end -->
-    <script src="js/product-card_hover.js"></script>
+      <script src="js/scripts.min.js"></script>
   </body>
 </html>

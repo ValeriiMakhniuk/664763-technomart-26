@@ -2,9 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <header class="main-header">
@@ -43,7 +45,7 @@
             </h1>
             <div class="main-header__info">
               <a href="tel:+7-812-555-05-55" class="mobile" aria-label="Номер телефона магазина Техномаркет">+7 (812) 555-05-55</a>
-              <p class="address">
+              <p class="main__address">
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               </p>
             </div>
@@ -89,40 +91,19 @@
       <section class="menu-grid">
         <h2 class="menu-grid__title visually-hidden">Меню</h2>
         <div class="container">
-          <nav class="menu clearfix" aria-label="Меню">
-            <ul class="menu__list clearfix">
-              <li class="menu__item" tabindex="0">
+          <nav class="menu" aria-label="Меню">
+            <ul class="menu__list">
+              <li class="menu__item menu__item_new" tabindex="0">
                 <h3 class="menu__item-title">Материалы</h3>
                 <a href="#" class="menu__item-link">на любой вкус</a>
-                <img
-                class="menu__item-icon"
-                width="44"
-                height="65"
-                src="img/svg/icon-1.svg"
-                alt=""
-                role="presentation">
               </li>
               <li class="menu__item" tabindex="0">
                 <h3 class="menu__item-title">Инструмент </h3>
                 <a href="#" class="menu__item-link">на все случаи</a>
-                <img
-                class="menu__item-icon"
-                width="75"
-                height="61"
-                src="img/svg/icon-2.svg"
-                alt=""
-                role="presentation">
               </li>
               <li class="menu__item" tabindex="0">
                 <h3 class="menu__item-title">Техника </h3>
                 <a href="#" class="menu__item-link">для стройки</a>
-                <img
-                class="menu__item-icon"
-                width="78"
-                height="62"
-                src="img/svg/icon-3.svg"
-                alt=""
-                role="presentation">
               </li>
               <li class="menu__item" tabindex="0">
                 <div
@@ -228,24 +209,10 @@
               <li class="menu__item" tabindex="0">
                 <h3 class="menu__item-title">Скидки 50% </h3>
                 <a href="#" class="menu__item-link">на 350 товаров</a>
-                <img
-                class="menu__item-icon"
-                width="60"
-                height="72"
-                src="img/svg/icon-4.svg"
-                alt=""
-                role="presentation">
               </li>
               <li class="menu__item" tabindex="0">
                 <h3 class="menu__item-title">Доставка </h3>
                 <a href="#" class="menu__item-link">бесплатно</a>
-                <img
-                class="menu__item-icon"
-                width="78"
-                height="63"
-                src="img/svg/icon-5.svg"
-                alt=""
-                role="presentation">
               </li>
             </ul>
             <!-- /.menu__list -->
@@ -265,7 +232,7 @@
           <ul class="popular-products__list">
             <li class="popular-products__product-card product-card" tabindex="0" aria-haspopup="true">
               <div class="product-card__img-block product-card__hover-block">
-                <div class="product-card__controls visually-hidden">
+                <div class="product-card__controls">
                   <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                   <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                 </div>
@@ -273,7 +240,7 @@
                 alt="Перфоратор BOSCH  BFG 9000"
                 width="184"
                 height="164"
-                class="product-card-img">
+                class="product-card__img">
               </div>
               <h3 class="product-card__title">Перфоратор BOSCH  BFG 9000</h3>
               <span class="product-card__lastprice">32500 Р.</span>
@@ -282,7 +249,7 @@
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card product-card" tabindex="0" aria-haspopup="true">
               <div class="product-card__img-block product-card__hover-block">
-                <div class="product-card__controls visually-hidden">
+                <div class="product-card__controls">
                   <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                   <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                 </div>
@@ -290,7 +257,7 @@
                 alt="Перфоратор BOSCH  BFG 3000"
                 width="127"
                 height="112"
-                class="product-card-img">
+                class="product-card__img">
               </div>
               <h3 class="product-card__title">Перфоратор BOSCH  BFG 3000</h3>
               <span class="product-card__lastprice">22500 Р.</span>
@@ -299,7 +266,7 @@
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card product-card" tabindex="0" aria-haspopup="true">
               <div class="product-card__img-block product-card__hover-block">
-                <div class="product-card__controls visually-hidden">
+                <div class="product-card__controls">
                   <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                   <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                 </div>
@@ -307,7 +274,7 @@
                 alt="Перфоратор BOSCH  BFG 6000"
                 width="144"
                 height="128"
-                class="product-card-img">
+                class="product-card__img">
               </div>
               <h3 class="product-card__title">Перфоратор BOSCH  BFG 6000</h3>
               <span class="product-card__lastprice">30500 Р.</span>
@@ -316,7 +283,7 @@
             <!-- popular-products__product-card -->
             <li class="popular-products__product-card_new product-card" tabindex="0" aria-haspopup="true">
               <div class="product-card__img-block product-card__hover-block">
-                <div class="product-card__controls visually-hidden">
+                <div class="product-card__controls">
                   <a href="#" role="button" class="product-card__buy-btn" tabindex="-1">купить</a>
                   <a href="#" role="button" class="product-card__bookmarks-btn" tabindex="-1">В закладки</a>
                 </div>
@@ -324,7 +291,7 @@
                 alt="Перфоратор BOSCH  BFG 2000"
                 width="127"
                 height="112"
-                class="product-card-img">
+                class="product-card__img">
               </div>
               <h3 class="product-card__title">Перфоратор BOSCH  BFG 2000</h3>
               <span class="product-card__lastprice"></span>
@@ -365,7 +332,7 @@
             </li>
             <li class="popular-producers__item">
               <a href="#">
-                <img src="img/producers/DeWALT.jpg"
+                <img src="img/producers/dewalt.jpg"
                 alt="DeWALT"
                 width="146"
                 height="44"
@@ -474,21 +441,21 @@
             </ul>
             <!-- /.service__accordeon-list -->
             <div
-            class="services__accordeon-pannel"
+            class="services__accordeon-pannel services__accordeon-pannel_delivery"
             id="delivery"
             role="region"
             aria-labelledby="deliverybtn">
               <span class="services__accordeon-pannel-title">Доставка</span>
               <p class="services__accordeon-pannel-desc">
                   Мы с удовольствием доставим ваш товар прямо <br>
-                  к вашему подъезду совершенно бесплатно! <br>
+                  к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем, <br>
-                  поднимая его на ваш этаж! <br>
+                  поднимая его на ваш этаж!
               </p>
             </div>
             <!-- /.services__accordeon-pannel -->
             <div
-            class="services__accordeon-pannel"
+            class="services__accordeon-pannel services__accordeon-pannel_garantee"
             id="garantee"
             role="region"
             aria-labelledby="garanteebtn"
@@ -496,15 +463,15 @@
               <span class="services__accordeon-pannel-title">Гарантия</span>
               <p class="services__accordeon-pannel-desc">
                 Если купленный у нас товар поломается или заискрит, <br>
-                а также в случае пожара, спровоцированного его
-                возгоранием, <br>вы всегда можете быть уверены в
-                нашей гарантии. Мы обменяем <br> сгоревший товар на новый. <br>
+                а также в случае пожара, спровоцированного его возгоранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                сгоревший товар на новый. <br>
                 Дом уж восстановите как-нибудь сами.
               </p>
             </div>
             <!-- /.services__accordeon-pannel -->
             <div
-            class="services__accordeon-pannel"
+            class="services__accordeon-pannel services__accordeon-pannel_credit"
             id="credit"
             role="region"
             aria-labelledby="creditbtn"
@@ -758,9 +725,6 @@
         </button>
       </div>
       <!-- map end -->
-    <script src="js/contacts__modal.js"></script>
-    <script src="js/accordion.js"></script>
-    <script src="js/product-card_hover.js"></script>
-    <script src="js/map.js"></script>
+      <script src="js/scripts.min.js"></script>
   </body>
 </html>
