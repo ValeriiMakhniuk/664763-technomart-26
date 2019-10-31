@@ -760,21 +760,6 @@ body {
   padding-top: 60px;
 }
 
-/* .menu-grid .menu__list {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 123px 123px 123px;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  grid-template-areas:
-    "item1 item2 item3"
-    "slider slider item4"
-    "slider slider item5";
-  margin: 0;
-  padding: 0;
-  list-style: none;
-} */
-
 .menu__list {
   display: flex;
   flex-wrap: wrap;
