@@ -193,23 +193,23 @@
                   <legend class="catalog__filter-producers-title">Производители:</legend>
                   <ul class="catalog__filter-producers-list">
                     <li class="catalog__filter-producers-item">
-                      <input type="checkbox" name="bosh" class="visually-hidden" id="bosh" checked>
+                      <input type="checkbox" name="bosh" class="visually-hidden catalog__filter-producers-checkbox" id="bosh" checked>
                       <label for="bosh">BOSH</label>
                     </li>
                     <li class="catalog__filter-producers-item">
-                      <input type="checkbox" name="interskol" class="visually-hidden" id="interskol">
+                      <input type="checkbox" name="interskol" class="visually-hidden catalog__filter-producers-checkbox" id="interskol">
                       <label for="interskol">ИНТЕРСКОЛ</label>
                     </li>
                     <li class="catalog__filter-producers-item">
-                      <input type="checkbox" name="makita" class="visually-hidden" id="makita" checked>
+                      <input type="checkbox" name="makita" class="visually-hidden catalog__filter-producers-checkbox" id="makita" checked>
                       <label for="makita">MAKITA</label>
                     </li>
                     <li class="catalog__filter-producers-item">
-                      <input type="checkbox" name="dewalt" id="dewalt" class="visually-hidden">
+                      <input type="checkbox" name="dewalt" id="dewalt" class="visually-hidden catalog__filter-producers-checkbox">
                       <label for="dewalt">Dewalt</label>
                     </li>
                     <li class="catalog__filter-producers-item">
-                      <input type="checkbox" name="hitachi" id="hitachi" class="visually-hidden">
+                      <input type="checkbox" name="hitachi" id="hitachi" class="visually-hidden catalog__filter-producers-checkbox">
                       <label for="hitachi">HITACHI</label>
                     </li>
                   </ul>
@@ -220,11 +220,11 @@
                   <legend class="catalog__filter-supply-title">Питание:</legend>
                   <ul class="catalog__filter-supply-list">
                     <li class="catalog__filter-supply-item">
-                      <input type="radio" name="supply" id="accum" class="visually-hidden" checked>
+                      <input type="radio" name="supply" id="accum" class="visually-hidden catalog__filter-supply-radio" checked>
                       <label for="accum">Аккумуляторные</label>
                     </li>
                     <li class="catalog__filter-supply-item">
-                      <input type="radio" name="supply" id="net" class="visually-hidden">
+                      <input type="radio" name="supply" id="net" class="visually-hidden catalog__filter-supply-radio">
                       <label for="net">Сетевые</label>
                     </li>
                   </ul>
@@ -559,10 +559,10 @@
       <!-- /.footer__top-section -->
       <div class="footer__bot-section">
         <div class="container footer__bot-section-inner">
-          <p class="footer__copyright">
-            © 2010–2019 Компания «Техномарт» <br>
-            Все права защищены
-          </p>
+          <div class="footer__copyright">
+            <p>© 2010–2019 Компания «Техномарт»</p>
+            <p>Все права защищены</p>
+          </div>
           <ul class="footer__socials-list">
             <li class="footer__socials-item">
               <a

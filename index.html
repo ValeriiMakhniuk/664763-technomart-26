@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="main-header">
@@ -38,11 +38,7 @@
       <div class="main-header__bot-section">
         <div class="container main-header__bot-section-inner">
           <div class="row">
-            <h1 class="main-header__main-title">
-              Интернет-магазин <br />
-              строительных материалов <br />
-              и инструментов для ремонта <br />
-            </h1>
+            <h1 class="main-header__main-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
             <div class="main-header__info">
               <a href="tel:+7-812-555-05-55" class="mobile" aria-label="Номер телефона магазина Техномаркет">+7 (812) 555-05-55</a>
               <p class="main__address">
@@ -93,15 +89,15 @@
         <div class="container">
           <nav class="menu" aria-label="Меню">
             <ul class="menu__list">
-              <li class="menu__item menu__item_new" tabindex="0">
+              <li class="menu__item menu__item_new menu__item_material" tabindex="0">
                 <h3 class="menu__item-title">Материалы</h3>
                 <a href="#" class="menu__item-link">на любой вкус</a>
               </li>
-              <li class="menu__item" tabindex="0">
+              <li class="menu__item menu__item_tools" tabindex="0">
                 <h3 class="menu__item-title">Инструмент </h3>
                 <a href="#" class="menu__item-link">на все случаи</a>
               </li>
-              <li class="menu__item" tabindex="0">
+              <li class="menu__item menu__item_tech" tabindex="0">
                 <h3 class="menu__item-title">Техника </h3>
                 <a href="#" class="menu__item-link">для стройки</a>
               </li>
@@ -206,13 +202,15 @@
                 </div>
                 <!-- /.slider -->
               </li>
-              <li class="menu__item" tabindex="0">
-                <h3 class="menu__item-title">Скидки 50% </h3>
-                <a href="#" class="menu__item-link">на 350 товаров</a>
-              </li>
-              <li class="menu__item" tabindex="0">
-                <h3 class="menu__item-title">Доставка </h3>
-                <a href="#" class="menu__item-link">бесплатно</a>
+              <li class="menu__item_container">
+                <div class="menu__item menu__item_discount" tabindex="0">
+                  <h3 class="menu__item-title">Скидки 50% </h3>
+                  <a href="#" class="menu__item-link">на 350 товаров</a>
+                </div>
+                <div class="menu__item menu__item_delivery" tabindex="0">
+                  <h3 class="menu__item-title">Доставка </h3>
+                  <a href="#" class="menu__item-link">бесплатно</a>
+                </div>
               </li>
             </ul>
             <!-- /.menu__list -->
@@ -501,8 +499,8 @@
               для ремонта и строительства не оставит равнодушными любителей
               сэкономить на гастарбайтерах.
             </p>
-            <p class="about__info-txt">
-              Мы можем доставить ваш товар в самые отдаленные точки России! <br>
+            <p class="about__info-txt about__info-txt_delivery">
+              Мы можем доставить ваш товар в самые отдаленные точки России!
               Техномарт работает со многими транспортными компаниями:
             </p>
             <ul class="about__info-delivery-list">
@@ -600,10 +598,10 @@
       <!-- /.footer__top-section -->
       <div class="footer__bot-section">
         <div class="container footer__bot-section-inner">
-          <p class="footer__copyright">
-            © 2010–2019 Компания «Техномарт» <br>
-            Все права защищены
-          </p>
+          <div class="footer__copyright">
+            <p>© 2010–2019 Компания «Техномарт»</p>
+            <p>Все права защищены</p>
+          </div>
           <ul class="footer__socials-list">
             <li class="footer__socials-item">
               <a

@@ -72,6 +72,8 @@ if (!document.querySelector('#catalog')) {
   contactsModalForm.addEventListener('submit', e => {
     if (!contactsModalName.value || !contactsModalMail.value || !contactsModalMessage.value) {
       e.preventDefault()
+      contactsModal.classList.remove('about__contacts-dialog_animate_error')
+      contactsModal.offsetWidth = contactsModal.offsetWidth
       contactsModal.classList.add('about__contacts-dialog_animate_error')
     } else {
       if (isStorageSupport) {
