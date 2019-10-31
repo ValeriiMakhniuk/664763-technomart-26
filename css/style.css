@@ -772,6 +772,7 @@ body {
 
 .menu-grid .menu__item {
   position: relative;
+  flex-basis: 100%;
   max-width: 300px;
   min-height: 123px;
   display: -webkit-box;
